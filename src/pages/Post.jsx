@@ -83,7 +83,6 @@ function Post() {
         Loading...
       </div>
     );
-  console.log({ post });
   return (
     <div className="Post">
       <div className="post-content">
