@@ -1,0 +1,506 @@
+#root {
+  max-width: 1280px;
+  margin: 0;
+}
+* {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.App {
+  width: 100vw;
+  margin: 0;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+.Home {
+  height: inherit;
+}
+.Nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+
+  background-color: #0b0a07;
+}
+.Nav .section-one {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border-bottom: 1px solid #f0ec57;
+  font-size: 15px;
+}
+
+.Nav .section-two {
+  flex: 1;
+}
+
+.Nav .logo {
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-options {
+  display: flex;
+  gap: 15px;
+  padding: 0px 15px;
+}
+
+.nav-options button {
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.nav-options .logout-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid whitesmoke;
+}
+
+.nav-options .login-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid whitesmoke;
+}
+
+.nav-options .signup-btn {
+  background-color: whitesmoke;
+}
+.nav-options .login-btn:hover {
+  background-color: whitesmoke;
+  color: #0b0a07;
+}
+.nav-options .signup-btn:hover {
+  background-color: transparent;
+  color: white;
+  border: 1px solid whitesmoke;
+}
+
+.Showcase {
+  height: 600px;
+  border-bottom: 1px solid #0b0a07;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  padding: 0px 250px;
+}
+
+.Showcase #info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 50px;
+}
+
+.Showcase div h1 {
+  font-size: 65px;
+  color: #0b0a07;
+}
+
+.Showcase div p {
+  font-size: 24px;
+  color: #0b0a07;
+}
+
+.showcase-image {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.showcase-image img {
+  width: 100%;
+  height: 80%;
+  border-radius: 5px;
+}
+
+.section-heading {
+  color: black;
+  font-size: 2rem;
+  padding: 15px 350px;
+  border-bottom: 1px solid #111;
+}
+
+.Posts {
+  padding: 0px 0px;
+  min-height: 500px;
+}
+
+.posts-div {
+  padding: 15px 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.PostCard {
+  background-color: rgba(197, 197, 197, 0.2);
+  border-radius: 5px;
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  margin: 25px 0px;
+  border: 5px solid transparent;
+  box-shadow: 1px 1px 2px 3px #111;
+}
+
+.PostCard .card-image {
+  width: 100%;
+  border-radius: 5px;
+}
+.PostCard .card-image img {
+  width: 100%;
+  border-radius: 5px;
+}
+.PostCard:hover {
+  box-shadow: 1px 1px 1px rgba(71, 71, 71, 0.267);
+  border: 5px solid #f0ec57;
+}
+
+.PostCard .title {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.PostCard .description {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.HightlightSection {
+  height: 500px;
+  border-top: 1px solid #0b0a07;
+  border-bottom: 1px solid #f0ec57;
+  display: flex;
+  color: #0b0a07;
+  padding: 0px 250px;
+  gap: 50px;
+}
+
+.HightlightSection .details {
+  flex: 1;
+}
+.HightlightSection .details p {
+  font-size: 1.3rem;
+}
+.director-heading {
+  text-align: center;
+}
+
+.text {
+  margin: 0 auto;
+  font-size: 18px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.director-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.director-image img {
+  width: 100%;
+  height: 80%;
+  border-radius: 5px;
+}
+
+.MailSection {
+  font-size: 10px;
+  height: 250px;
+  border-bottom: 1px solid #0b0a07;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subsciption-container {
+  background-color: #0b0a07;
+  border-radius: 10px;
+  padding: 25px 75px;
+}
+.MailSection div {
+  color: white;
+}
+
+.subs {
+  font-size: 18px;
+  padding: 10px;
+}
+
+#email {
+  font-size: 15px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+#submit {
+  font-size: 15px;
+  padding: 15px 35px;
+  background-color: #f0ec57;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.Footer {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #0b0a07;
+  background-color: #f0ec57;
+}
+
+.Post {
+  /* height: calc(100vh - 100px); */
+  overflow-y: auto;
+}
+
+.Post .image {
+  flex: 1;
+  width: 100%;
+  height: 50%;
+  border-radius: 7px;
+}
+
+.Post .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+
+.post-content {
+  width: 40%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.post-content .back {
+  font-size: 1.8rem;
+  cursor: pointer;
+  width: fit-content;
+  margin: 25px 0px;
+}
+
+.post-content .time {
+  font-size: 1.3rem;
+}
+.post-content .back:hover {
+  color: rgba(26, 22, 22, 0.5);
+}
+
+.post-content .title {
+  flex: 1;
+  font-size: 1.5rem;
+  background-color: rgba(197, 197, 197, 0.116);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 5px;
+}
+.post-content .post-text {
+  flex: 5;
+  background-color: rgba(197, 197, 197, 0.116);
+  padding: 25px 5px;
+  border-radius: 7px;
+  font-size: 1.3rem;
+}
+
+.post-content .comments {
+  flex: 3;
+  background-color: rgba(197, 197, 197, 0.116);
+  border-radius: 7px;
+  padding: 25px 5px;
+  margin: 15px 0px;
+}
+
+.post-content .comment-textarea {
+  width: 100%;
+  height: 100px;
+  margin: 25px 0px;
+}
+.post-content .comment-textarea textarea {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.post-content .post-author {
+  margin: 0px;
+  padding: 0px;
+}
+
+.post-content .post-author h4 {
+  margin: 0px;
+  padding: 0px;
+  font-weight: 600;
+}
+
+.comment-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5px;
+}
+
+.comment-section-header button {
+  background-color: rgba(197, 197, 197, 0.2);
+  padding: 15px 25px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.comment-section-header button:hover {
+  background-color: rgba(197, 197, 197, 0.3);
+  color: rgba(26, 22, 22, 0.5);
+}
+
+.Login {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(197, 197, 197, 0.116);
+}
+.SignUp {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(197, 197, 197, 0.116);
+}
+
+.page-container {
+  height: 60%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: 1px 0px 3px 1px rgba(71, 71, 71, 0.267);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: saturate(180%) blur(10px);
+}
+
+.SignUp .page-container {
+  height: 70%;
+}
+
+.page-container .form-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-div {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+.Register .page-container {
+  height: 70%;
+}
+.form-div input {
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 15px;
+  padding: 15px 15px;
+  border: 1px solid #bbb;
+  border-radius: 7px;
+  font-size: 1rem;
+}
+.form-div .submit {
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 15px;
+  padding: 15px 15px;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  font-size: 1rem;
+  background-color: #0f0f0f;
+  color: white;
+}
+.form-div .submit:hover {
+  background-color: #0f0f0f;
+}
+.dont-have {
+  display: flex;
+  gap: 5px;
+}
+.image-section {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section h1 {
+  font-size: 14rem;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.submit {
+  cursor: pointer;
+}
+
+.comment {
+  box-shadow: 1px 1px 3px rgba(187, 186, 186, 0.774);
+  padding: 15px 5px;
+  border-radius: 5px;
+  margin: 15px 0px;
+}
+.comment .comment-username {
+  font-weight: 600;
+}
+
+.comment .comment-text {
+  padding: 5px 0px;
+}
