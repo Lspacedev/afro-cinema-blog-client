@@ -21,7 +21,7 @@ function Post() {
       setLoading(true);
 
       const res = await fetch(
-        `http://localhost:3000/api/public/posts/${post_id}`,
+        `${import.meta.env.VITE_PROD_URL}/api/public/posts/${post_id}`,
         {
           method: "GET",
           headers: {
@@ -53,7 +53,7 @@ function Post() {
       setLoading(true);
 
       const res = await fetch(
-        `http://localhost:3000/api/public/posts/${post_id}/comments`,
+        `${import.meta.env.VITE_PROD_URL}/api/public/posts/${post_id}/comments`,
         {
           method: "POST",
           headers: {

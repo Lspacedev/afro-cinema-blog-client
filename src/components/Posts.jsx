@@ -13,12 +13,15 @@ function Posts() {
     try {
       setLoading(true);
 
-      const res = await fetch("http://localhost:3000/api/public/posts", {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const res = await fetch(
+        `${import.meta.env.VITE_PROD_URL}/api/public/posts`,
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
       const data = await res.json();
       if (res.ok) {
         setPosts(data.posts);
@@ -31,7 +34,6 @@ function Posts() {
   }
 
   async function goToPost(id) {
-    console.log({ id });
     navigation("/posts/" + id);
   }
   if (loading) return <div className="loading">Loading...</div>;

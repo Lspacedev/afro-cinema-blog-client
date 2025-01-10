@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 function PostCard({ post, goToPost }) {
-  console.log({ post });
   return (
     <div className="PostCard" onClick={() => goToPost(post && post.id)}>
       <div className="card-image">{post && <img src={post.imageUrl} />}</div>

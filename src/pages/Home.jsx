@@ -8,7 +8,6 @@ import { useParams, Outlet } from "react-router-dom";
 
 function Home() {
   const { post_id } = useParams();
-  console.log(post_id);
   return (
     <div className="Home">
       <Nav />
