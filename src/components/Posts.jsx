@@ -41,11 +41,15 @@ function Posts() {
     <div className="Posts">
       <div className="section-heading">Posts</div>
       <div className="posts-div">
-        {posts &&
-          posts.length > 0 &&
+        {posts && posts.length > 0 ? (
           posts.map((post, i) => (
             <PostCard key={i} post={post} goToPost={goToPost} />
-          ))}
+          ))
+        ) : (
+          <div style={{ textAlign: "center", padding: "5px" }}>
+            No blog posts
+          </div>
+        )}
       </div>
     </div>
   );
