@@ -192,10 +192,12 @@ body {
 
 .PostCard .card-image {
   width: 100%;
+  height: 60%;
   border-radius: 5px;
 }
 .PostCard .card-image img {
   width: 100%;
+  height: 100%;
   border-radius: 5px;
 }
 .PostCard:hover {
