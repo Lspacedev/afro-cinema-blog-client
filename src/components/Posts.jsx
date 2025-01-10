@@ -36,7 +36,6 @@ function Posts() {
     navigation("/posts/" + id);
   }
   if (loading) return <div className="loading">Loading...</div>;
-
   return (
     <div className="Posts">
       <div className="section-heading">Posts</div>
