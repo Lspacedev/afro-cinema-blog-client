@@ -46,12 +46,34 @@ body {
 
 .Nav .logo {
   font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.Nav .logo div {
+  font-weight: 900;
+}
+.Login .logo {
+  font-size: 1.8rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Login .logo div {
+  font-weight: 900;
+}
+.SignUp .logo {
+  font-size: 1.8rem;
   font-weight: 500;
   display: flex;
   align-items: center;
   gap: 5px;
 }
-
+.SignUp .logo div {
+  font-weight: 900;
+}
 .nav-options {
   display: flex;
   gap: 15px;
@@ -137,7 +159,7 @@ body {
 .section-heading {
   color: black;
   font-size: 2rem;
-  padding: 15px 350px;
+  padding: 15px 300px;
   border-bottom: 1px solid #111;
 }
 
@@ -197,7 +219,7 @@ body {
   border-bottom: 1px solid #f0ec57;
   display: flex;
   color: #0b0a07;
-  padding: 0px 250px;
+  padding: 0px 300px;
   gap: 50px;
 }
 
@@ -208,7 +230,7 @@ body {
   font-size: 1.3rem;
 }
 .director-heading {
-  text-align: center;
+  text-align: start;
 }
 
 .text {
@@ -239,6 +261,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 15px;
 }
 
 .subsciption-container {
@@ -255,12 +278,13 @@ body {
   padding: 10px;
 }
 
-#email {
+.email {
   font-size: 15px;
   padding: 15px 25px;
   box-sizing: border-box;
   border: none;
   outline: none;
+  border-radius: 15px 0px 0px 15px;
 }
 
 #submit {
@@ -271,6 +295,7 @@ body {
   outline: none;
   box-sizing: border-box;
   cursor: pointer;
+  border-radius: 0px 15px 15px 0px;
 }
 
 .Footer {
@@ -397,14 +422,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(197, 197, 197, 0.116);
+  background: linear-gradient(rgba(20, 20, 20, 0.534), rgba(0, 0, 0, 0.836));
 }
 .SignUp {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(197, 197, 197, 0.116);
+  background: linear-gradient(rgba(20, 20, 20, 0.534), rgba(0, 0, 0, 0.836));
 }
 
 .page-container {
@@ -415,12 +440,13 @@ body {
   border-radius: 25px;
   box-shadow: 1px 0px 3px 1px rgba(71, 71, 71, 0.267);
   border-radius: 15px;
-  background: rgba(255, 255, 255, 0.25);
+  background: whitesmoke;
   backdrop-filter: saturate(180%) blur(10px);
 }
 
 .SignUp .page-container {
-  height: 70%;
+  height: 80%;
+  width: 30%;
 }
 
 .page-container .form-section {
@@ -446,9 +472,10 @@ body {
   -moz-box-sizing: border-box;
   margin: 15px;
   padding: 15px 15px;
-  border: 1px solid #bbb;
+  border: 3px solid #f1f1f1;
   border-radius: 7px;
   font-size: 1rem;
+  outline: none;
 }
 .form-div .submit {
   width: 100%;
@@ -466,10 +493,20 @@ body {
 .form-div .submit:hover {
   background-color: #0f0f0f;
 }
+.Login input:focus {
+  border: 3px solid #f0ec57;
+}
+.SignUp input:focus {
+  border: 3px solid #f0ec57;
+}
 .dont-have {
   display: flex;
   gap: 5px;
 }
+.dont-have .button:hover {
+  color: #c7c237;
+}
+
 .image-section {
   flex: 1;
   width: 100%;

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import { ImVideoCamera } from "react-icons/im";
 
 function SignUp() {
   const [username, setUsername] = useState("");
@@ -52,8 +53,11 @@ function SignUp() {
     <div className="SignUp">
       <div className="page-container">
         <div className="form-section">
-          <h2>Afro-cinema Blog</h2>
-          <p>SignU up for an account.</p>
+          <div className="logo">
+            <ImVideoCamera />
+            <div>Afro-Cinema</div>
+          </div>
+          <p>Sign up for an account.</p>
           <div className="dont-have">
             <div>Already an account?</div>
             <div className="button" onClick={() => navigation("/login")}>

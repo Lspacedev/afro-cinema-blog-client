@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import { ImVideoCamera } from "react-icons/im";
+
 function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -42,7 +44,10 @@ function Login() {
     <div className="Login">
       <div className="page-container">
         <div className="form-section">
-          <h2>Afro-cinema Blog</h2>
+          <div className="logo">
+            <ImVideoCamera />
+            <div>Afro-Cinema</div>
+          </div>
           <p>Log in to your account.</p>
 
           <div className="form-div">

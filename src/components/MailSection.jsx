@@ -7,7 +7,11 @@ function MailSection() {
         <div class="subs">Subscribe to our mailing list!</div>
         <div>
           <form>
-            <input id="email" type="email" placeholder="example@email.com" />
+            <input
+              className="email"
+              type="email"
+              placeholder="example@email.com"
+            />
             <input id="submit" type="submit" value="Submit" />
           </form>
         </div>
