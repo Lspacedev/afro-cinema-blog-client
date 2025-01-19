@@ -14,42 +14,12 @@ body {
 }
 
 .App {
-  width: 100vw;
   margin: 0;
   padding: 0px;
   display: flex;
   flex-direction: column;
 }
 .Home {
-  height: inherit;
-}
-.Nav {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-
-  background-color: #0b0a07;
-}
-.Nav .section-one {
-  flex: 2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  border-bottom: 1px solid #f0ec57;
-  font-size: 15px;
-}
-
-.Nav .section-two {
-  flex: 1;
-}
-
-.Nav .logo {
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  gap: 5px;
 }
 .Nav .logo div {
   font-weight: 900;
@@ -75,19 +45,6 @@ body {
 .SignUp .logo div {
   font-weight: 900;
 }
-.nav-options {
-  display: flex;
-  gap: 15px;
-  padding: 0px 15px;
-}
-
-.nav-options button {
-  padding: 10px 15px;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
 .nav-options .logout-btn {
   background-color: transparent;
   color: white;
@@ -102,6 +59,7 @@ body {
 
 .nav-options .signup-btn {
   background-color: whitesmoke;
+  border: 1px solid transparent;
 }
 .nav-options .login-btn:hover {
   background-color: whitesmoke;
@@ -112,14 +70,12 @@ body {
   color: white;
   border: 1px solid whitesmoke;
 }
-
+/* 
 .Showcase {
-  height: 600px;
   border-bottom: 1px solid #0b0a07;
   display: flex;
   justify-content: space-around;
   background-color: white;
-  padding: 0px 250px;
 }
 
 .Showcase #info {
@@ -128,16 +84,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0px 50px;
 }
 
 .Showcase div h1 {
-  font-size: 65px;
   color: #0b0a07;
 }
 
 .Showcase div p {
-  font-size: 24px;
   color: #0b0a07;
 }
 
@@ -155,52 +108,8 @@ body {
   width: 100%;
   height: 80%;
   border-radius: 5px;
-}
+} */
 
-.section-heading {
-  color: black;
-  font-size: 2rem;
-  padding: 15px 300px;
-  border-bottom: 1px solid #111;
-}
-
-.Posts {
-  padding: 0px 0px;
-  min-height: 500px;
-}
-
-.posts-div {
-  padding: 15px 0px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 50px;
-}
-
-.PostCard {
-  background-color: rgba(197, 197, 197, 0.2);
-  border-radius: 5px;
-  width: 300px;
-  height: 350px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  margin: 25px 0px;
-  border: 5px solid transparent;
-  box-shadow: 1px 1px 2px 3px #111;
-}
-
-.PostCard .card-image {
-  width: 100%;
-  height: 60%;
-  border-radius: 5px;
-}
-.PostCard .card-image img {
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-}
 .PostCard:hover {
   box-shadow: 1px 1px 1px rgba(71, 71, 71, 0.267);
   border: 5px solid #f0ec57;
@@ -214,91 +123,6 @@ body {
 .PostCard .description {
   font-size: 1.3rem;
   font-weight: 400;
-}
-
-.HightlightSection {
-  height: 500px;
-  border-top: 1px solid #0b0a07;
-  border-bottom: 1px solid #f0ec57;
-  display: flex;
-  color: #0b0a07;
-  padding: 0px 300px;
-  gap: 50px;
-}
-
-.HightlightSection .details {
-  flex: 1;
-}
-.HightlightSection .details p {
-  font-size: 1.3rem;
-}
-.director-heading {
-  text-align: start;
-}
-
-.text {
-  margin: 0 auto;
-  font-size: 18px;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  hyphens: auto;
-}
-
-.director-image {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  border-radius: 5px;
-}
-
-.director-image img {
-  width: 100%;
-  height: 80%;
-  border-radius: 5px;
-}
-
-.MailSection {
-  font-size: 10px;
-  height: 250px;
-  border-bottom: 1px solid #0b0a07;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px;
-}
-
-.subsciption-container {
-  background-color: #0b0a07;
-  border-radius: 10px;
-  padding: 25px 75px;
-}
-.MailSection div {
-  color: white;
-}
-
-.subs {
-  font-size: 18px;
-  padding: 10px;
-}
-
-.email {
-  font-size: 15px;
-  padding: 15px 25px;
-  box-sizing: border-box;
-  border: none;
-  outline: none;
-  border-radius: 15px 0px 0px 15px;
-}
-
-#submit {
-  font-size: 15px;
-  padding: 15px 35px;
-  background-color: #f0ec57;
-  border: none;
-  outline: none;
-  box-sizing: border-box;
-  cursor: pointer;
-  border-radius: 0px 15px 15px 0px;
 }
 
 .Footer {
@@ -330,7 +154,7 @@ body {
 }
 
 .post-content {
-  width: 40%;
+  width: 95%;
   margin: 0px auto;
   display: flex;
   flex-direction: column;
@@ -420,7 +244,7 @@ body {
 }
 
 .Login {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -428,28 +252,11 @@ body {
   background: linear-gradient(rgba(20, 20, 20, 0.534), rgba(0, 0, 0, 0.836));
 }
 .SignUp {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(rgba(20, 20, 20, 0.534), rgba(0, 0, 0, 0.836));
-}
-
-.page-container {
-  height: 60%;
-  width: 25%;
-  display: flex;
-  align-items: center;
-  border-radius: 25px;
-  box-shadow: 1px 0px 3px 1px rgba(71, 71, 71, 0.267);
-  border-radius: 15px;
-  background: whitesmoke;
-  backdrop-filter: saturate(180%) blur(10px);
-}
-
-.SignUp .page-container {
-  height: 80%;
-  width: 30%;
 }
 
 .page-container .form-section {
@@ -460,15 +267,13 @@ body {
 }
 
 .form-div {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 5px;
 }
-.Register .page-container {
-  height: 70%;
-}
+
 .form-div input {
   width: 100%;
   box-sizing: border-box;
@@ -543,4 +348,353 @@ body {
 
 .comment .comment-text {
   padding: 5px 0px;
+}
+
+@media (min-width: 320px) {
+  .Nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #0b0a07;
+  }
+  .Nav .section-one {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    border-bottom: 1px solid #f0ec57;
+    font-size: 15px;
+  }
+
+  .Nav .section-two {
+    flex: 1;
+    display: flex;
+  }
+
+  .Nav .logo {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+  }
+
+  .nav-options {
+    display: flex;
+    gap: 15px;
+    padding: 10px 15px;
+  }
+
+  .nav-options button {
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .Showcase {
+    border-bottom: 1px solid #0b0a07;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px;
+  }
+
+  .Showcase #info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Showcase div h1 {
+    color: #0b0a07;
+  }
+
+  .Showcase div p {
+    color: #0b0a07;
+    margin: 15px 0px;
+  }
+
+  .showcase-image {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+
+  .showcase-image img {
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+  }
+
+  .section-heading {
+    color: black;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #111;
+    padding: 15px;
+  }
+
+  .Posts {
+    padding: 0px 15px;
+    min-height: 500px;
+  }
+
+  .posts-div {
+    padding: 15px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .PostCard {
+    background-color: rgba(197, 197, 197, 0.2);
+    border-radius: 5px;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin: 25px 0px;
+    border: 5px solid transparent;
+    box-shadow: 1px 1px 2px 3px #111;
+  }
+
+  .PostCard .card-image {
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+  }
+  .PostCard .card-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  .HightlightSection {
+    border-top: 1px solid #0b0a07;
+    border-bottom: 1px solid #f0ec57;
+    display: flex;
+    flex-direction: column;
+    color: #0b0a07;
+    gap: 50px;
+    padding: 25px 15px;
+  }
+
+  .HightlightSection .details {
+    flex: 1;
+  }
+  .HightlightSection .details p {
+    font-size: 1.3rem;
+  }
+  .director-heading {
+    text-align: start;
+  }
+
+  .text {
+    margin: 0 auto;
+    font-size: 18px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+
+  .director-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .director-image img {
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+  }
+
+  .MailSection {
+    width: 100%;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0px;
+    border-bottom: 1px solid #0b0a07;
+  }
+
+  .subsciption-container {
+    border-radius: 0px;
+    padding: 15px 30px;
+    background-color: #0b0a07;
+    border-radius: 15px;
+  }
+  .MailSection div {
+    color: white;
+  }
+
+  .subs {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .email {
+    font-size: 15px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-radius: 15px 0px 0px 15px;
+  }
+
+  #submit {
+    font-size: 15px;
+    padding: 5px;
+    background-color: #f0ec57;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 0px 15px 15px 0px;
+  }
+  .page-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+  }
+}
+@media (min-width: 480px) {
+  .page-container {
+    height: 60%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  .Nav .section-one {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0px;
+  }
+
+  .Nav .logo {
+    padding: 0px;
+  }
+
+  .nav-options {
+    padding: 0px 15px;
+  }
+}
+@media (min-width: 600px) {
+  .Showcase {
+    flex-direction: row;
+    padding: 15px 50px;
+  }
+  .section-heading {
+    padding: 15px 50px;
+  }
+
+  .Showcase div h1 {
+    font-weight: 400;
+  }
+
+  .Showcase div p {
+    color: #0b0a07;
+  }
+
+  .HightlightSection {
+    padding: 15px 50px;
+  }
+  .MailSection div {
+    color: white;
+  }
+
+  .subs {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .email {
+    font-size: 15px;
+    padding: 15px 50px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-radius: 15px 0px 0px 15px;
+  }
+
+  #submit {
+    font-size: 15px;
+    padding: 15px 25px;
+    background-color: #f0ec57;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 0px 15px 15px 0px;
+  }
+  .post-content {
+    width: 70%;
+  }
+}
+@media (min-width: 801px) {
+  .Showcase {
+    padding: 15px 100px;
+  }
+  .section-heading {
+    padding: 15px 100px;
+  }
+  .HightlightSection {
+    padding: 15px 100px;
+  }
+  .post-content {
+    width: 60%;
+  }
+}
+@media (min-width: 1025px) {
+  .page-container {
+    height: 60%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    /* box-shadow: 1px 0px 3px 1px rgba(71, 71, 71, 0.267); */
+    /* background: whitesmoke; */
+    /* backdrop-filter: saturate(180%) blur(10px); */
+    padding: 25px 0px;
+  }
+
+  .form-div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Showcase {
+    padding: 15px 150px;
+  }
+
+  .Showcase div p {
+  }
+
+  .section-heading {
+    padding: 15px 150px;
+  }
+  .HightlightSection {
+    flex-direction: row;
+    padding: 15px 150px;
+  }
+  .post-content {
+    width: 40%;
+  }
+}
+@media (min-width: 1281px) {
 }
