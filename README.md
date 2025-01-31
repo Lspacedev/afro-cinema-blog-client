@@ -68,7 +68,6 @@ npm run dev
 - ExpressJs
 - PostgreSQL
 - Supabase storage
-- Socket.io
 
 ## Credits:
 
