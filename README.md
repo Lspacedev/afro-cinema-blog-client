@@ -59,7 +59,7 @@ npm run dev
 
 1. Open the live site in your browser.
 2. Login or create an account.
-3. View posts, manage profile, send messages.
+3. View blog posts and write comments.
 
 ## Tech Stack
 
